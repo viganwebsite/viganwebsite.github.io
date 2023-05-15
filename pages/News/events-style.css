@@ -26,6 +26,8 @@ font-family: 'League Spartan', sans-serif; */
 }
 
 .firstevent p{
+    text-align: justify;
+    text-align-last: left ;
     font-family: 'League Spartan', sans-serif;
     font-size: 20px;
     padding: 20px 0 0 0
@@ -73,6 +75,8 @@ font-family: 'League Spartan', sans-serif; */
 }
 
 .secondevent p{
+    text-align: justify;
+    text-align-last: left ;
     font-family: 'League Spartan', sans-serif;
     font-size: 20px;
     padding: 20px 0 0 0
@@ -120,6 +124,8 @@ font-family: 'League Spartan', sans-serif; */
 }
 
 .thirdevent p{
+    text-align: justify;
+    text-align-last: left ;
     font-family: 'League Spartan', sans-serif;
     font-size: 20px;
     padding: 20px 0 0 0
