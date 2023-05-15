@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+
+    <head>
+        <title>Vigan City</title>
+    </head>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content 
+
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        */
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        
+
+    </script>
+    <style>
+        .newscontainer{
+            margin: 0 auto; /* Centers the wrapper horizontally */
+            background-color: orange;
+            width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        .newscontainer > *{
+            flex: 1 1 50%;
+            box-sizing: border-box;
+            padding: 20px;
+            word-wrap: break-word; /* Breaks long words to prevent overflow */
+            white-space: normal; /* Allows text to wrap to a new line */
+        }
+        .newscontainer img{
+
+            width: 100%;
+            height: auto;
+        }
+        .newscontainer h1{
+            font-family: 'Fjalla One', sans-serif;
+            color: black;
+            font-size: 30px;
+        }
+        
+        .newscontainer h1 span{
+            font-size: 20px ;
+        }
+        .newscontainer p{
+            text-indent: 4em;
+            font-family: 'League Spartan', sans-serif;
+            color: black;
+            text-align: justify;
+            font-size: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            @viewport{
+                width: 600px;
+            }
+            .newscontainer{
+                overflow: hidden;
+                background-color: orange;
+                flex-direction: column;
+                display: flex;
+                min-height: 600px;
+                align-items: center;
+                justify-content: space-around;
+                text-align: center;
+                width: 80%;
+                font-family: 'Fjalla One', sans-serif;
+                padding: 30px;
+            }
+            .newscontainer img{
+
+                width: 100%;
+                height: auto;
+            }
+            .newscontainer h1{
+                font-family: 'Fjalla One', sans-serif;
+                color: black;
+                font-size: 20px;
+            }
+            .newscontainer h1 span{
+                font-size: 15px ;
+            }
+            .newscontainer p{
+                text-indent: 4em;
+                font-family: 'League Spartan', sans-serif;
+                color: black;
+                text-align: justify;
+                text-align-last: justify;
+                font-size: 15px;
+            }
+        }
+    </style>
+    <body>
+        <header>
+            <div class="sidenavcont">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+                    
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+            
+    
+    
+            <div class="header">
+                <div class="header-logo">
+                    <a href="../../index.html"><img src="https://archive.org/download/vigan/resources/viganSeal.png" alt="viganSeal"></a>
+                    <h1 style="font-family: 'Barabara', sans-serif;">VIGAN CITY</h1>
+                </div>
+                
+                <nav>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="bgpic1" style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: auto;">
+            <h1>Local News</h1>
+            <div class="newscontainer">
+                <h1>Mayor Bonito Singson to Launch Vigan Tourist Passport<br> <span>April 24, 2023</span></h1>
+                <img src="https://archive.org/30/items/vigan/Mayor_Bonito.jpg"alt="">
+                <p>Vigan City Mayor Bonito Singson is set to launch the Ciudad de Vigan Pasaporte de Turista on April 28, 2023, coinciding with the City’s 2023 Binatbatan Festival of the Arts.
+                <br><br>    The Vigan Tourist passport is a booklet that is similar to a regular passport, available in three (3) colors, purely for tourism purposes only and valid only in Vigan City, Ilocos Sur. The program aims at promoting its rich cultural history while also supporting local businesses. Visitors can get a special stamp on their passport whenever they purchase items or services from partner establishments wherein they can earn points which can later be redeemed for special discounts and freebies.
+                <br><br>    The Vigan Tourist Passport can be purchased at designated booths or online around the City for an affordable price. The booklet comes with locally-made items like Vigan Longganisa, Abel Iloko products, or mini burnay jars. The passport also includes brief history about Vigan and iconic figures with great contributions to Vigan’s storied past. A QR code is also found in the booklet that shows the city’s many points of interest
+                <br><br>    Mayor Singson sees this initiative as one of several planned legacy projects for the city with hopes to boost its tourism industry while also promoting its unique heritage and supporting local businesses.
+                <br><br>    Grand launching of the Vigan Tourist Passport will be on April 28, 2023 at Calle Crisologo. A motorcade will be held in the morning and the launching program will happen in the evening at 6:00 PM. See you there!
+                </p>
+            </div>
+            <div class="newscontainer" style="background-color: white;">
+                <h1>Vigan City Launches Tourist Passport as it Celebrates Its Arts Festival <br> <span>May 7, 2023</span></h1>
+                <img src="https://archive.org/30/items/vigan/Passport_Vigan.jpg"alt="">
+                <p>The City Government of Vigan in Ilocos Sur just launched the Ciudad de Vigan Pasaporte de Turista, aimed at boosting local businesses in one of the most popular tourist destinations in northern Luzon, known for its heritage houses and declared a UNESCO World Heritage site. It served as a highlight of the week-long Viva Vigan Binatbatan Festival of the Arts.
+                <br><br> Daily Tribune Lifestyle/Entertainment Facebook Page, May 7, 2023
+                </p>
+            </div>
+            <div class="newscontainer">
+                <h1>With the release of the Pasaporte de Turista, tourists can enjoy all that Vigan has to offer, all year round! <br> <span>May 10, 2023</span></h1>
+                <img src="https://pia.gov.ph/uploads/2023/05/6533abf202579a40970b7638aa68c5e1.jpg"alt="">
+                <p>The heritage city of Vigan successfully closed the 10-day celebration of its summer festival, the Binatbatan Festival for the Arts, with the street dancing and showdown competitions on the second Sunday of May. The Binatbatan Festival celebrates the culture and artistry that has shaped the city into a UNESCO heritage site.
+                <br><br>    On Labor Day, halfway through the ten-day event, the Abel Iloko Fashion Show highlighted the many cuts and patterns in both apparel and accessories. Spearheaded by the city’s first lady, Mia Aguila-Singson, the show’s trunk collection employed the Tela de Bonita which she sourced from all over Vigan.
+                <br><br>    The label “Tela de Bonita” is derived from the Spanish words for fabric and pretty. Bonita also happens to be the name of the Singsons’ lovely daughter. Efforts are likewise widespread in supporting the cottage industry of weaving as loom weavers have dwindled in number in recent years.
+                <br><br>    This year’s celebration also saw the launching of the Pasaporte de Turista. Mayor Jose Bonito Singson Jr., with the support of the city council and tourism office, has greenlit this tourism legacy project in furtherance of the One Vigan, One Ilocos Sur campaign.
+                <br><br>    -Earl D.C. Bracamonte, May 9, 2023, kaluh-doscope.blogspot.com
+                    
+                </p>
+            </div>
+        </div>
+        </div>
+        <section class= "footer">
+            <div class="footer-imgs">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Coat_of_arms_of_the_Philippines.svg/300px-Coat_of_arms_of_the_Philippines.svg.png" alt="Pilipinas">
+            <img src="https://archive.org/download/vigan/resources/viganSeal1.png"  alt="Seven-Wonders">
+            <img src="https://archive.org/download/vigan/resources/viganSeal2.png"  alt="World-Heritage">
+            </div>
+            <h1 class="vigan-footer">VIGAN<br>CITY</h1>
+            <div class="footer-text">
+                <div id="contact-info">
+                <p>City information: (077) 722-8771-75 local 206<br>
+                City Tourism: (077) 722-8771-75 local 104<br>
+                admin@vigancity.gov.ph</p>
+                </div>
+                <div id="copyright">
+                    <p>COPYRIGHT © 2023 | CITY GOVERNMENT OF VIGAN</p>
+                </div>
+            </div>
+        </section>
+            
+    </body>
+</html>

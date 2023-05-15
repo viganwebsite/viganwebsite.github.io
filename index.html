@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+
+    <head>
+        <title>Vigan City</title>
+    </head>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content 
+        */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        
+
+    </script>
+    <body>
+        
+        <header>
+        <div class="sidenavcont">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="dropdown" style="border-radius: 10px;">
+                    <button class="dropbtn" onclick="myFunction()">The City
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./pages/TheCity/history.html">History</a>
+                        <a href="./pages/TheCity/geography.html">Geography</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown" style="border-radius: 10px">
+                    <button class="dropbtn" onclick="myFunction()">Governance
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./pages/Governance/cityofficials.html">City Officials</a>
+                        <a href="./pages/Governance/citizen.html">Citizen's Charter</a>
+                        <a href="./pages/Governance/vmc.html">Vision, Mission, and Core Values</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="border-radius: 10px">
+                    <button class="dropbtn" onclick="myFunction()">Tourism
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./pages/Tourism/attraction.html">Attractions</a>
+                        <a href="./pages/Tourism/industries.html">Industries</a>
+                        <a href="./pages/Tourism/localeats.html">Local Eats</a>
+                        <a href="./pages/Tourism/business.html">Business Application</a>
+                        <a href="./pages/Tourism/touristmap.html">Tourist Map</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="border-radius: 10px">
+                    <button class="dropbtn" onclick="myFunction()">News
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./pages/News/localnews.html">Local News</a>
+                        <a href="./pages/News/events.html">Events</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="border-radius: 10px" >
+                    <button class="dropbtn" onclick="myFunction()">Contacts
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./pages/Contacts/hotlines.html">Hotlines</a>
+                    </div>
+                </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <script>
+                function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                }
+                
+                function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+        </div>
+        
+
+
+        <div class="header">
+            <div class="header-logo">
+                <a href="index.html"><img src="https://archive.org/download/vigan/resources/viganSeal.png" alt="viganSeal"></a>
+                <h1 style="font-family: 'Barabara', sans-serif;">VIGAN CITY</h1>
+            </div>
+            
+            <nav>
+                <div class="dropdown" style="border-radius: 10px;">
+                    <button class="dropbtn" onclick="myFunction()">The City
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./pages/TheCity/history.html">History</a>
+                        <a href="./pages/TheCity/geography.html">Geography</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="border-radius: 10px">
+                    <button class="dropbtn" onclick="myFunction()">Governance
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./pages/Governance/cityofficials.html">City Officials</a>
+                        <a href="./pages/Governance/citizen.html">Citizen's Charter</a>
+                        <a href="./pages/Governance/vmc.html">Vision, Mission, and Core Values</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="border-radius: 10px">
+                    <button class="dropbtn" onclick="myFunction()">Tourism
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./pages/Tourism/attraction.html">Attractions</a>
+                        <a href="./pages/Tourism/industries.html">Industries</a>
+                        <a href="./pages/Tourism/localeats.html">Local Eats</a>
+                        <a href="./pages/Tourism/business.html">Business Application</a>
+                        <a href="./pages/Tourism/touristmap.html">Tourist Map</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="border-radius: 10px">
+                    <button class="dropbtn" onclick="myFunction()">News
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./pages/News/localnews.html">Local News</a>
+                        <a href="./pages/News/events.html">Events</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="border-radius: 10px" >
+                    <button class="dropbtn" onclick="myFunction()">Contacts
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./pages/Contacts/hotlines.html">Hotlines</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+            
+        </header>
+        <div class="bgpic1">
+                <div class="embed-vid">
+                    <iframe src="https://www.youtube.com/embed/z9t47d82Qgo?autoplay=1&mute=1&loop=1&playlist=z9t47d82Qgo&controls=0" allowfullscreen ></iframe>
+                </div>
+                
+                <div class="bgpic1-content">
+                    <h1>Welcome to Vigan City!<br><p>"The heritage province"<p></h1>
+                </div>
+        </div>
+        <div class="content1" style="font-family: 'Fjalla One', sans-serif;">
+            <ul>
+                <li style="font-size:40px;">Featured News</li>
+                <main>
+                    <li>
+                        <div class="article">
+                                
+                                <a href="#"><img src="https://ia902603.us.archive.org/30/items/vigan/Mayor_Bonito.jpg"alt="sub"></a>
+                                <ul>
+                                    <li style="font-size: 20px;">Mayor Bonito Singson to Launch Vigan Tourist Passport</li>
+                                    <li style="font-size: 15px;text-align: justify; font-family: 'League Spartan', sans-serif;">April 24, 2023 | <br><br>Mayor Singson sees this initiative as one of several planned legacy projects for the city with hopes to boost its tourism industry while also promoting its unique heritage and supporting local businesses.</li>
+                                    <li style="font-size: 15px;text-align: justify; font-family: 'League Spartan', sans-serif;"><a href="#">See more</a></li>
+                                </ul>
+                        </div>
+                        
+                        <div class="article">
+                            <a href="#"><img src="https://ia902603.us.archive.org/30/items/vigan/Passport_Vigan.jpg"></a>
+                            <ul>
+                                <li style="font-size: 20px;">Vigan City launches tourist passport as it celebrates its arts festival</li>
+                                <li style="font-size: 15px;text-align: justify ; font-family: 'League Spartan', sans-serif;">May 7, 2023 |<br><br> The City Government of Vigan in Ilocos Sur just launched the Ciudad de Vigan Pasaporte de Turista, aimed at boosting local businesses in one of the most popular tourist destinations in northern Luzon, known for its heritage houses and declared a UNESCO World Heritage site. It served as a highlight of the week-long Viva Vigan Binatbatan Festival of the Arts.</li>
+                                <li style="font-size: 15px;text-align: justify; font-family: 'League Spartan', sans-serif;"><a href="#">See more</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="article">
+                            <a href="#"><img src="https://pia.gov.ph/uploads/2023/05/6533abf202579a40970b7638aa68c5e1.jpg"></a>
+                            <ul>
+                                <li style="font-size: 20px;">With the release of the Pasaporte de Turista, tourists can enjoy all that Vigan has to offer, all year round!</li>
+                                <li style="font-size: 15px;text-align: justify; font-family: 'League Spartan', sans-serif;">May 10, 2023 | <br><br>On the second Sunday of May, the street dancing and showdown events successfully concluded the 10-day celebration of the Binatbatan Festival for the Arts, the heritage city of Vigan. The Binatbatan Festival honors the creativity and culture that have made the city a UNESCO World Heritage Site.</li>
+                                <li style="font-size: 15px;text-align: justify; font-family: 'League Spartan', sans-serif;"><a href="#">See more</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </main>
+                
+            </ul>
+        </div>
+        <div class="bgpic2">
+    
+            <div class="box">
+                <div class="box-1"> 
+                    <h3>Unearth Vigan City's captivating past</h3>
+                    <a href="./pages/TheCity/history.html"><img src="https://archive.org/30/items/vigan/Vigan_History.jpg" style="width: 100%;" alt="vigan-history"></a>
+                    <p>Discover the mysteries of Vigan City's historical tapestry by delving into its illustrious past. 
+                    Experiencing the history of Vigan City is a fascinating journey that reveals the city's distinct personality 
+                    and demonstrates its lasting relevance in the fabric of Philippine heritage.</p>
+                </div>
+                
+                <div class="box-1">
+                    <h3>Meet the Brilliant Minds Steering the City's Ship!</h3>
+                    <a href="./pages/Governance/cityofficials.html"><img src="https://archive.org/30/items/vigan/Vigan_Officials.png" style="width: 100%;" alt="vigan-officials"></a>
+                    <p>Learn about the guiding brains that are the foundation of Vigan City's administration. Explore
+                        the City Government's hierarchy who ceaselessly try to ensure a better future for everyone and are the 
+                        engine that propels the development of the city.
+                    </p>
+                </div>
+
+                <div class="box-1">
+                    <h3>Unveil Vigan City's Tourist Hotspots</h3>
+                    <a href="./pages/Tourism/attraction.html"><img src="https://archive.org/30/items/vigan/Tourist_Spot.png" style="width: 100%;" alt="vigan-tourist attractions"></a>
+                    <p>Step right through the nostalgic streets of Vigan CIty and feel the magic of a bygone-era. 
+                    Vigan City's past comes to life, attracting visitors with its rich legacy and cultural significance, 
+                        from the bustling Calle Crisologo to the magnificent St. Paul's Cathedral.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <section class= "footer">
+            <div class="footer-imgs">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Coat_of_arms_of_the_Philippines.svg/300px-Coat_of_arms_of_the_Philippines.svg.png" alt="Pilipinas">
+            <img src="https://archive.org/download/vigan/resources/viganSeal1.png" alt="Seven-Wonders">
+            <img src="https://archive.org/download/vigan/resources/viganSeal2.png" alt="World-Heritage">
+            </div>
+            <h1 class="vigan-footer">VIGAN<br>CITY</h1>
+            <div class="footer-text">
+                <div id="contact-info">
+                <p>City information: (077) 722-8771-75 local 206<br>
+                City Tourism: (077) 722-8771-75 local 104<br>
+                admin@vigancity.gov.ph</p>
+                </div>
+                <div id="copyright">
+                    <p>COPYRIGHT © 2023 | CITY GOVERNMENT OF VIGAN</p>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>

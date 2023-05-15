@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+
+    <head>
+        <title>Vigan City</title>
+    </head>
+
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content 
+
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        */
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        
+
+    </script>
+    <body>
+        <header>
+            <div class="sidenavcont">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+                    
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+            
+    
+    
+            <div class="header">
+                <div class="header-logo">
+                    <a href="../../index.html"><img src="https://archive.org/download/vigan/resources/viganSeal.png" alt="viganSeal"></a>
+                    <h1 style="font-family: 'Barabara', sans-serif;">VIGAN CITY</h1>
+                </div>
+                
+                <nav>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="bgpic1">
+            <h1>BUSINESS APPLICATION</h1>
+        </div>
+
+        <div class="title">
+            <h2>PROCEDURES</h2>
+            <p>CLICK OR TAP A BOX TO VIEW A STEP</p>
+        </div>
+
+        <section class="steps">
+            <div class="slide-container">
+                <span class="slider-span" id="slider-span1"></span>
+                <span class="slider-span" id="slider-span2"></span>
+                <span class="slider-span" id="slider-span3"></span>
+
+                <div class="img-slider">
+                    <div class="slides-div" id="slide-1">
+                        <div class="img" id="img1">
+                            <h1 id="#slider-span1" class="b1">1</h1>
+                            <h2 id="#slider-span1" class="text1"><b>STEP 1</b>
+                             </p>
+                             <p id="#slider-span1" class="mini1">Submit the completed UNIFIED FORM (UF) along with 
+                                necessary supporting documentation.
+                             </p>
+                             <h3 id="#slider-span1" class="time1"><ion-icon name="time-outline"></ion-icon>
+                                Approximately 10 minutes
+                             </h3>             
+                        </div>
+                        <a href="#slider-span1" class="button" id="button-1"></a>
+                    </div>
+                    <div class="slides-div" id="slide-2">
+                        <div class="img" id="img2">
+                            <h1 id="#slider-span2" class="b2">2</h1>
+                            <h2 id="#slider-span2" class="text2"><b>STEP 2</b>
+                             </p>
+                             <p id="#slider-span2" class="mini2">Go to the City Treasurer's Office and pay all your taxes and
+                                other necessary charges. Secure the official receipt.
+                             </p>
+                             <h3 id="#slider-span2" class="time2"><ion-icon name="time-outline"></ion-icon>
+                                Approximately 19 minutes
+                             </h3>   
+                        </div>
+                        <a href="#slider-span2" class="button" id="button-2"></a>
+                    </div>
+                    <div class="slides-div" id="slide-3">
+                        <div class="img" id="img3">
+                            <h1 id="#slider-span3" class="b3">3</h1>
+                            <h2 id="#slider-span3" class="text3"><b>STEP 3</b></p>
+                            <p id="#slider-span3" class="mini3">For the printing and release the mayor's permit, you must provide 
+                                the proof of payment (Official receipt).
+                            </p>
+                            <h3 id="#slider-span3" class="time3"><ion-icon name="time-outline"></ion-icon>
+                                Approximately 10 minutes
+                             </h3>   
+                        </div>
+                        <a href="#slider-span3" class="button" id="button-3"></a>
+                    </div>
+
+            </div>
+            
+        </section>
+        <div class="forms">
+                <div class="download-button">
+                    <button><a href="/resources/Unified-Application-Form-for-Regular-Special-Business-External-Form.pdf" target="_blank">DOWNLOAD UNIFIED FORM</a></button>
+                </div>
+            </div>  
+<style>
+ .steps {
+    background-color: orange;
+    height: 85vh;
+    display: flex;
+    zoom: 50%;
+ }
+
+.slides-div h1 {
+    position: absolute;
+    font-size: 300px;
+    font-family: 'Barabara', sans-serif;
+    color: black;
+    left: 15%;
+    top: -11%;
+}
+
+.title {
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+
+.title h2{
+    font-size: 60px;
+    margin-top: 15px;
+}
+.title p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.download-button{
+    margin-top: 10px;
+    margin-bottom:10px;
+    text-align: center;
+}
+
+.download-button a{
+    color: white;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 25px 0 0 0;
+    transition: all 0.3s ease;
+}
+
+.download-button button{
+    padding: 10px 15px;
+    background: #085589;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.download-button button:hover{
+    transform: scale(1.05) translateX(10px);
+    background: white;
+    color:black
+}
+
+.download-button a:hover{
+    color: black
+}
+
+
+.slides-div h2 {
+    position: relative;
+    color: white;
+    margin-top: 50px;
+    margin-left: 20px;
+    opacity: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 70px;
+}
+
+.slides-div p {
+    position: relative;
+    color: white;
+    margin-top: 60px;
+    opacity: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.slides-div h3 {
+    position: relative;
+    color: black;
+    margin-top: 60px;
+    opacity: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+
+.slides-div img {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    overflow: hidden;
+    height: 200px;
+    object-fit: cover;
+}
+
+.slide-container {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-slider {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+.slides-div {
+    display: flex;
+    align-items: center;
+    margin: 0 70px 0 70px;
+    background-color: white;
+    text-align: left;
+    border-radius: 25px 0 25px 0;
+    margin-left: 10px;
+}
+.img {
+    position: relative;
+    width: 240px;
+    height: 370px;
+    transition: .5s;
+    filter: saturate(10%);
+}
+.button {
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: .5s;
+}
+.slides-div:hover{
+    filter: brightness(80%);
+}
+
+#slider-span1:target ~ .img-slider #img1,
+#slider-span1:target ~ .img-slider #button-1 {
+    width: 380px;
+    height: 570px;
+    border-radius: 25px 0 25px 0;
+    filter: saturate(100%);
+}
+#slider-span2:target ~ .img-slider #img2,
+#slider-span2:target ~ .img-slider #button-2 {
+    width: 380px;
+    height: 570px;
+    border-radius: 25px 0 25px 0;
+    filter: saturate(100%);
+}
+#slider-span3:target ~ .img-slider #img3,
+#slider-span3:target ~ .img-slider #button-3 {
+    width: 380px;
+    height: 570px;
+    border-radius: 25px 0 25px 0;
+    filter: saturate(100%);
+}
+
+/*Background change */
+            
+#slider-span1:target ~ .img-slider .slides-div #img1{
+    background-image: linear-gradient(#da6d42, #085589);
+}
+#slider-span2:target ~ .img-slider .slides-div #img2{
+    background-image: linear-gradient(#da6d42, #085589);
+}
+#slider-span3:target ~ .img-slider .slides-div #img3{
+    background-image: linear-gradient(#da6d42, #085589);
+}
+
+/*Opacity change*/
+
+#slider-span1:target ~ .img-slider .b1 {
+    opacity: 0;
+}
+#slider-span2:target ~ .img-slider .b2 {
+    opacity: 0;
+}
+#slider-span3:target ~ .img-slider .b3 {
+    opacity: 0;
+}
+
+#slider-span1:target ~ .img-slider .text1 {
+    opacity: 1;
+}
+#slider-span2:target ~ .img-slider .text2 {
+    opacity: 1;
+}
+#slider-span3:target ~ .img-slider .text3 {
+    opacity: 1;
+}
+
+#slider-span1:target ~ .img-slider .mini1 {
+    opacity: 1;
+}
+#slider-span2:target ~ .img-slider .mini2 {
+    opacity: 1;
+}
+#slider-span3:target ~ .img-slider .mini3 {
+    opacity: 1;
+}
+
+#slider-span1:target ~ .img-slider .time1 {
+    opacity: 1;
+}
+#slider-span2:target ~ .img-slider .time2 {
+    opacity: 1;
+}
+#slider-span3:target ~ .img-slider .time3 {
+    opacity: 1;
+}
+
+@media (max-width:600px){
+    @viewport{
+        width: 600px;
+    }
+
+    .steps {
+    background-color: orange;
+    height: 85vh;
+    display: flex;
+    zoom: 47%;
+ }
+
+    .slides-div h1 {
+    position: absolute;
+    font-size: 200px;
+    font-family: 'Barabara', sans-serif;
+    color: black;
+    left: 21%;
+    top: 31%;
+}
+
+.title h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.title p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.slides-div{
+    margin: 0 10px 0 10px;
+}
+.img {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transition: .5s;
+    filter: saturate(10%);
+}
+.button {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    transition: .5s;
+}
+.slides-div:hover{
+    filter: brightness(100%);
+}
+
+.slides-div p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.slides-div h3 {
+    margin-top: 40px;
+}
+
+#slider-span1:target ~ .img-slider #img1,
+#slider-span1:target ~ .img-slider #button-1 {
+    width: 300px;
+    height: 448px;
+    border-radius: 25px 0 25px 0;
+    filter: saturate(100%);
+}
+#slider-span2:target ~ .img-slider #img2,
+#slider-span2:target ~ .img-slider #button-2 {
+    width: 300px;
+    height: 448px;
+    border-radius: 25px 0 25px 0;
+    filter: saturate(100%);
+}
+#slider-span3:target ~ .img-slider #img3,
+#slider-span3:target ~ .img-slider #button-3 {
+    width: 300px;
+    height: 448px;
+    border-radius: 25px 0 25px 0;
+    filter: saturate(100%);
+}
+
+}
+</style>
+
+
+        
+        <section class= "footer">
+            <div class="footer-imgs">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Coat_of_arms_of_the_Philippines.svg/300px-Coat_of_arms_of_the_Philippines.svg.png" alt="Pilipinas">
+            <img src="https://archive.org/download/vigan/resources/viganSeal1.png" alt="Seven-Wonders">
+            <img src="https://archive.org/download/vigan/resources/viganSeal2.png"  alt="World-Heritage">
+            </div>
+            <h1 class="vigan-footer">VIGAN<br>CITY</h1>
+            <div class="footer-text">
+                <div id="contact-info">
+                <p>City information: (077) 722-8771-75 local 206<br>
+                City Tourism: (077) 722-8771-75 local 104<br>
+                admin@vigancity.gov.ph</p>
+                </div>
+                <div id="copyright">
+                    <p>COPYRIGHT © 2023 | CITY GOVERNMENT OF VIGAN</p>
+                </div>
+            </div>
+        </section>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    </body>
+</html>

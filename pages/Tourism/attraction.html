@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+
+    <head>
+        <title>Vigan City</title>
+    </head>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content 
+
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        */
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        
+
+    </script>
+    <style>
+        
+        .tour-container{
+            overflow: hidden;
+            background-color: orange;
+            display: flex;
+            min-height: 600px;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+            text-align-last: left;
+            font-family: 'Fjalla One', sans-serif;
+            padding: 10px;
+        }
+        .tour-container h1{
+            margin: 0 10% 0 10%;
+            font-size: 20px;
+        }
+        .tour-content p{
+            font-family: 'League Spartan', sans-serif;
+            font-size: 20px;
+            color:black;
+            padding: 15px;
+            background-color: white;
+        }
+        .tour-content h1{
+            font-family: 'League Spartan';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px 0 20px 0;
+            border-radius: 25px 25px 0 0;
+            background-color: #085589;
+            text-align-last:center;
+            color: white;
+        }
+        .tour-container .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            width: 500px;
+            border-radius: 35px;
+            transition: 0.3s all ease-out;
+        }
+        .img:hover{
+            transform: scale(1.1);
+        }
+        .tour-container .img h1{
+            
+            justify-content: center;
+            padding: 20px;
+            margin: 0 10% 0 10%;
+            width: 600px;
+        }
+        @media screen and (max-width: 600px) {
+            @viewport{
+                width: 600px;
+            }
+            .tour-container{
+                overflow: hidden;
+                background-color: orange;
+                flex-direction: column;
+                display: flex;
+                min-height: 600px;
+                align-items: center;
+                justify-content: space-around;
+                text-align: justify;
+                text-align-last: left;
+                font-family: 'Fjalla One', sans-serif;
+                padding: 30px;
+            }
+            .tour-container h1{
+                margin: 0 20px 0 20px;
+                font-size: 30px;
+            }
+            .tour-container .img{
+                order: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+                width: 300px;
+                object-fit: cover;
+                border-radius: 20px;
+                transition: 0.3s all ease-out;
+                margin: 10px;
+                background-size: cover;
+            }
+            .tour-container .img h1{
+                
+                justify-content: center;
+                padding: 20px;
+                margin: 0 10% 0 10%;
+            
+            }
+            .tour-content{
+                order: 2;
+            }
+            .tour-content p{
+                font-family: 'League Spartan', sans-serif;
+                font-size: 20px;
+                color:black;
+                padding: 30px;
+                background-color: white;
+            }
+            .tour-content h1{
+                font-family: 'League Spartan';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 20px 0 20px 0;
+                border-radius: 25px 25px 0 0;
+                background-color: #085589;
+                text-align-last:center;
+                color: white;
+            }
+            .img:hover{
+                transform: scale(1.1);
+            }
+        }
+    </style>
+    <body>
+        <header>
+            <div class="sidenavcont">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+                    
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+            
+    
+    
+            <div class="header">
+                <div class="header-logo">
+                    <a href="../../index.html"><img src="https://archive.org/download/vigan/resources/viganSeal.png" alt="viganSeal"></a>
+                    <h1 style="font-family: 'Barabara', sans-serif;">VIGAN CITY</h1>
+                </div>
+                
+                <nav>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="bgpic1" style="background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://archive.org/30/items/vigan/ilocosbg.jpg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <h1>Tourist Attractions</h1>
+        </div>
+        <div class="tour-container">
+            <a href="https://www.google.com/maps/place/Crisologo,+Vigan+City,+Ilocos+Sur/@17.5696232,120.3856748,17z/data=!3m1!4b1!4m6!3m5!1s0x338e657640d83641:0xc06ac1f60bfbb445!8m2!3d17.5696181!4d120.3882497!16s%2Fg%2F1tlk8xpc" target="_blank">
+                <div class="img" style="background-image: url(https://archive.org/30/items/vigan/bg500px.jpg);"><h1></h1></div>
+            </a>
+            <div class="tour-content" >
+                <h1>Calle Crisologo</h1>
+                <p>
+                    The most photographed street in Vigan, Calle Crisologo this 
+                    known for its cobblestone pavements and old Spanish structures. 
+                    These structures used to be houses of wealthy families during 
+                    the Spanish colonial period but several were destroyed by fire 
+                    during the Japanese occupation of the Philippines.  The burned 
+                    houses were later on reconstructed and have been converted into 
+                    inns, cafes, and shops selling items such as accessories, furniture, 
+                    antiques, and other souvenir items.
+                </p>
+            </div>
+        </div>
+        <div class="tour-container" style="background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://archive.org/30/items/vigan/ilocosbg.jpg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <div class="tour-content">
+                <h1 style="background-color: orange;">Baluarte</h1>
+                <p>
+                    The residence of Chavit Singson, a former governor. 
+                    He opened it to the public to share his love of animals 
+                    and the natural world. It has a butterfly garden, a 
+                    miniature zoo, and an animal encounter show. Food hovels 
+                    and keepsake shops are accessible in the region.
+
+                </p>
+            </div>
+            <a href="https://www.google.com/maps/place/Baluarte+Resort+and+Mini+Zoo/@17.5512826,120.3746012,17z/data=!3m1!4b1!4m6!3m5!1s0x338e6f87a596172d:0x96f32ee35fddbd95!8m2!3d17.5512775!4d120.3771761!16s%2Fg%2F11c59v_j83" target="_blank">
+                <div class="img" style="background-image: url(https://archive.org/30/items/vigan/baluarte500px.jpg)"><h1></h1></div>
+            </a>
+            
+        </div>
+    
+
+        <div class="tour-container">
+            <a href="https://www.google.com/maps/place/Plaza+Salcedo+(Music+Dancing+Fountain)/@17.5754098,120.384993,17z/data=!3m1!4b1!4m6!3m5!1s0x338e65753d393867:0x8fdb2772882ab1fd!8m2!3d17.5754047!4d120.3875679!16s%2Fg%2F11cs3f1vt2" target="_blank">
+                <div class="img" style="background-image: url(https://archive.org/30/items/vigan/plazasalcedo500px.jpg)"><h1></h1></div>
+            </a>
+            
+            <div class="tour-content">
+                <h1>Plaza Salcedo</h1>
+                <p>
+                    This is a public park in Vigan, Ilocos Sur, Philippines. 
+                    The park is the longer arm of an L-shaped open space where 
+                    a popular fountain display is located.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-container" style="background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://archive.org/30/items/vigan/ilocosbg.jpg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <div class="tour-content">
+                <h1 style="background-color: orange;">Mira Hills <br> Fil-Spanish Friendship Park</h1>
+                <p>
+                    For both locals and visitors to Vigan, Mira Hills 
+                    Fil-Spanish Friendship Park serves as an educational 
+                    and recreational amenity. The pool and amphitheater 
+                    are among the park's features. ChEER and the Buridek 
+                    Children's Museum Zone. Additionally, it contains an 
+                    Eco-Park with a Tree Library. Also located in Mira Hills 
+                    is the 100-year-old water storage facility for Cities Vigan.
+
+                </p>
+            </div>
+            <a href="https://www.google.com/maps/place/Vigan+Fil-Hispanic+Park/@17.5695648,120.3789702,17z/data=!3m1!4b1!4m6!3m5!1s0x338e6570fda91313:0xca5b51f767004ad3!8m2!3d17.5695597!4d120.3815451!16s%2Fg%2F1hhk8gwl5" target="_blank">
+                <div class="img" style="background-image: url(https://archive.org/30/items/vigan/mirahills500px.jpg)"><h1></h1></div>
+            </a>
+            
+        </div>
+
+        <div class="tour-container">
+            <a href="https://www.google.com/maps/place/Hidden+Garden/@17.5595136,120.3619649,17z/data=!3m1!4b1!4m6!3m5!1s0x338e655f93a3d223:0xf57dbf3365f522d9!8m2!3d17.5595085!4d120.3645398!16s%2Fg%2F11cltc1264" target="_blank">
+                <div class="img" style="background-image: url(https://archive.org/30/items/vigan/hiddengarden500px.jpg)"><h1></h1></div>
+            </a>
+            
+            
+            <div class="tour-content">
+                <h1>Hidden Garden</h1>
+                <p>
+                    This is the place where they offer the best Ilocos cuisine 
+                    and the garden is a perfect place to roam around and you 
+                    will discover different kinds of plants and flowers in here. 
+                </p>
+            </div>
+        </div>
+
+        <div class="tour-container" style="background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://archive.org/30/items/vigan/ilocosbg.jpg);background-attachment: fixed;background-position: center;background-repeat: no-repeat; background-size: cover;">
+            <div class="tour-content">
+                <h1 style="background-color: orange;">Vigan Cathedral</h1>
+                <p>
+                    The Metropolitan Cathedral of the Conversion of St. 
+                    Paul the Apostle, or Vigan Cathedral, is a Catholic 
+                    cathedral in Vigan, Ilocos Sur, Philippines. It houses 
+                    the cathedral of the Archdiocese of Nueva Segovia. One of 
+                    the most remarkable historic sites in Vigan, it was included 
+                    in the Historic Town of Vigan's 1999 UNESCO World Heritage 
+                    Site declaration. It is a historic church in the Ilocos area, 
+                    located next to Burgos Plaza and in front of Salcedo Plaza.
+
+                </p>
+            </div>
+            <a href="https://www.google.com/maps/place/Metropolitan+Cathedral+of+the+Conversion+of+St.+Paul+the+Apostle+-+I,+Vigan+City,+Ilocos+Sur+(Archdiocese+of+Nueva+Segovia)/@17.5748544,120.3860082,17z/data=!3m1!4b1!4m6!3m5!1s0x338e6575689d9de3:0x360a31141cb71adb!8m2!3d17.5748493!4d120.3885831!16s%2Fm%2F0131jdtx" target="_blank">
+                <div class="img" style="background-image: url(https://archive.org/30/items/vigan/vigancathedral500px.jpg)"><h1></h1></div>
+            </a>
+            
+        </div>
+
+
+        </div>
+        <section class= "footer">
+            <div class="footer-imgs">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Coat_of_arms_of_the_Philippines.svg/300px-Coat_of_arms_of_the_Philippines.svg.png"  alt="Pilipinas">
+            <img src="https://archive.org/download/vigan/resources/viganSeal1.png"  alt="Seven-Wonders">
+            <img src="https://archive.org/download/vigan/resources/viganSeal2.png"  alt="World-Heritage">
+            </div>
+            <h1 class="vigan-footer">VIGAN<br>CITY</h1>
+            <div class="footer-text">
+                <div id="contact-info">
+                <p>City information: (077) 722-8771-75 local 206<br>
+                City Tourism: (077) 722-8771-75 local 104<br>
+                admin@vigancity.gov.ph</p>
+                </div>
+                <div id="copyright">
+                    <p>COPYRIGHT © 2023 | CITY GOVERNMENT OF VIGAN</p>
+                </div>
+            </div>
+        </section>
+            
+    </body>
+</html>

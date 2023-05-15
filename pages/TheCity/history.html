@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="historystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+
+    <head>
+        <title>Vigan City</title>
+    </head>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content 
+
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        */
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        
+
+    </script>
+
+        
+    <body>
+        <header>
+            <div class="sidenavcont">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+                    
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+            
+    
+    
+            <div class="header">
+                <div class="header-logo">
+                    <a href="../../index.html"><img src="https://archive.org/download/vigan/resources/viganSeal.png" alt="viganSeal"></a>
+                    <h1 style="font-family: 'Barabara', sans-serif;">VIGAN CITY</h1>
+                </div>
+                
+                <nav>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="bgpic1">
+            <div class="history-title">
+                <h1>HISTORY OF VIGAN CITY</h1>
+            </div>
+        </div>
+
+        <div class="history-content">
+            <p> Before the arrival of the colonizers, Vigan was a significant coastal commerce hub. Chinese junks sailed from the South China Sea 
+                to Isla de Bigan via the Mestizo River long before the arrival of the Spanish galleons. Seafaring traders came to trade gold, beeswax, 
+                and other mountain items from the Cordilleras for exotic goods from Asian nations. Chinese immigrants predominantly settled in Vigan, 
+                intermarried with the locals, and began the multiethnic Bigueo lineage.<br><br>
+                King Philip II dispatched Captain Juan de Salcedo to investigate the coast of Los Ilocano in 1572. The expedition left Manila on May 20 and landed in Vigan on June 12.
+                As a result, Don Juan de Salcedo established "Villa Fernandina de Vigan" in memory of Prince Ferdinand, the little son of 
+                King Philip II who passed away at the age of four, following the successful journey and exploration of the North.<br><br>
+                Salcedo received the old province of Ylocos, which at the time consisted of the Ilocos Norte, Ilocos Sur, Abra, 
+                La Union, and some sections of the Mountain Province, as payment for his services to the King. He was also given the title of Justicia Mayor de esta Provincia de Ylocos.<br><br>
+                In order to create a Spanish metropolis and subjugate the surrounding nations, Salcedo returned to the capital of his encomienda, 
+                Vigan, in January 1574. He brought with him some Augustinian missionaries who helped pioneer the evangelism of Ylocos.<br><br>
+                It was said that when Juan de Salcedo asked a native what the name of the site is, the native could not understand a word he was saying 
+                because Salcedo talked in Spanish. However, Salcedo was pointing to the ground, and the native believed that he was actually requesting 
+                the name of the flora that was growing there. He then referred to a tuber plant from the "gabi" or taro family by saying "bigaa apo, bigaa apo." 
+                The area was thereafter given the name Bigan by the Spaniards.
+                </p>
+            <img src="https://archive.org/30/items/vigan/Vigan_History.jpg">
+        </div>
+
+        <div class="t-container">
+            <h1 id="t-title">Historical Timeline</h1>
+
+            <div class="timeline-box">
+                <div class="tbox"><h2>1572</h2><p>By Juan de Salcedo and Father Alonzo de Alvarado, Vigan was established as a Spanish colonial settlement.<p></div>
+                <div class="tbox"><h2>1595</h2><p>Miguel de Benavides was appointed as the first bishop of the newly established Diocese of Nueva Segovia in the Cagayan Valley.</p></div>
+                <div class="tbox"><h2>1758</h2><p>The See of Nueva Segovia was moved from Lallo, Cagayan, to Vigan by Bp. Juan de la Fuente Y Yepez.</p></div>
+                <div class="tbox"><h2>1762</h2><p>The Silang Revolt: Ilocano independence warriors Diego and Gabriela.</p></div>
+                <div class="tbox"><h2>1790</h2><p>The Palacio Episcopal in Vigan was built by Bp. Garcia Juan Ruiz de San Agustin.</p></div>
+                <div class="tbox"><h2>1818</h2><p>The establishment of the distinct provinces of Ilocos Sur and Ilocos Norte.</p></div>
+                <div class="tbox"><h2>1822</h2><p>Vigan's Seminario de la Immaculada Concepcion was established by Bp. Antonio Alban.</p></div>
+                <div class="tbox"><h2>1852</h2><p>Vicente Barreiro y Perez established the Cementerio de Vigan, erecting an exact replica of Apo Lakay in Sinait inside the chapel.  Lepanto and Tiagan are cut off from the Ilocos region.</p></div>
+            </div>
+
+            <div class="timeline-box">
+                <div class="tbox"><h2>1872</h2><p>Frs. Burgos, Gomez, and Zamora were executed at Bagumbayan Field in Manila as supporters of the parish secularization movement.<p></div>
+                <div class="tbox"><h2>1883</h2><p>After a Peste epidemic, Vigan held the first Tres de Mayo Festival as a yearly act of gratitude to Apo Lakay.</p></div>
+                <div class="tbox"><h2>1889</h2><p>Poetess from Vigan at the Paris International Exposition is Leona Florentino.  We send Amburayan back to Ilocos Sur.</p></div>
+                <div class="tbox"><h2>1892</h2><p>The Katipunan was co-founded by Paoayan Valentin Diaz.  Establishment of Vigan's Colegio de Nias (Rosary College, SPCIS).</p></div>
+                <div class="tbox"><h2>1897</h2><p>At the Tejeros Convention, Artemio "Vibora" Ricarte represented Batac.   The Biak-na-Bato Constitution was co-written by Isabelo Artacho, a native of Vigan.</p></div>
+                <div class="tbox"><h2>1898</h2><p>The Battle Cry of Candon, I.S. (March 25) led by Isabelo Abaya.</p></div>
+                <div class="tbox"><h2>1901</h2><p>Capture of Elueteria Florentino, or "Capitana Teriang," a Vigan resistance movement benefactor. </p></div>
+                <div class="tbox"><h2>1925</h2><p>Establishment of Colegio de la Immaculada Concepcion in Vigan (DWCV).</p></div>
+            </div>
+
+            <div class="timeline-box">
+                <div class="tbox"><h2>1948</h2><p>The sixth president of the Philippines was Elpidio Quirino, a native of Vigan.<p></div>
+                <div class="tbox"><h2>1956</h2><p>Nuestra Seora de la Caridad, Queen of Ilocandia, is canonically crowned.</p></div>
+                <div class="tbox"><h2>1999</h2><p>The Historic Town of Vigan was inscribed in the UNESCO World Heritage List of Sites and Monuments.</p></div>
+                <div class="tbox"><h2>2001</h2><p>Vigan became the first city in Ilocos Sur province to bear the name "City of Vigan."</p></div>
+                <div class="tbox"><h2>2008</h2><p>Vigan commemorated the 250th anniversary of the relocation of the Nueva Segovia Diocese's seat from Lallo, Cagayan to Vigan City.</p></div>
+                <div class="tbox"><h2>2012</h2><p>At the 40th anniversary celebration of the World Heritage Convention in Kyoto, Japan, Vigan was recognized as UNESCO's Best Practice in World Heritage Management.</p></div>
+                <div class="tbox"><h2>2014</h2><p>Vigan was announced as one of the New Seven Wonders-Cities of the World.</p></div>
+                <div class="tbox"><h2>2015</h2><p>Vigan was formally launched as a New7Wonders City in 2015 on May 7.</p></div>
+            </div>
+        </div>
+        
+        <!-- <div class="bgpic1" style="height:200px;">
+        </div> -->
+
+        <section class= "footer">
+            <div class="footer-imgs">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Coat_of_arms_of_the_Philippines.svg/300px-Coat_of_arms_of_the_Philippines.svg.png" alt="Pilipinas">
+            <img src="https://archive.org/download/vigan/resources/viganSeal1.png" alt="Seven-Wonders">
+            <img src="https://archive.org/download/vigan/resources/viganSeal2.png" alt="World-Heritage">
+            </div>
+            <h1 class="vigan-footer">VIGAN<br>CITY</h1>
+            <div class="footer-text">
+                <div id="contact-info">
+                <p>City information: (077) 722-8771-75 local 206<br>
+                City Tourism: (077) 722-8771-75 local 104<br>
+                admin@vigancity.gov.ph</p>
+                </div>
+                <div id="copyright">
+                    <p>COPYRIGHT © 2023 | CITY GOVERNMENT OF VIGAN</p>
+                </div>
+            </div>
+        </section>
+
+        </div>
+            
+    </body>
+</html>

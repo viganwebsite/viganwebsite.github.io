@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="geographystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+
+    <head>
+        <title>Vigan City</title>
+    </head>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content 
+
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        */
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        
+
+    </script>
+
+    <body>
+        <header>
+            <div class="sidenavcont">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+                    
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+            
+    
+    
+            <div class="header">
+                <div class="header-logo">
+                    <a href="../../index.html"><img src="https://archive.org/download/vigan/resources/viganSeal.png" alt="viganSeal"></a>
+                    <h1 style="font-family: 'Barabara', sans-serif;">VIGAN CITY</h1>
+                </div>
+                
+                <nav>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="bgpic1">
+            <h1>Vigan's Geography</h1>
+        </div>
+
+        <div class="geo-container">
+            <h1>Geographic Location and Area</h1>
+            <div class="geo-content">
+                <p>
+                    The Ilocos Sur province's capital, Vigan, is located on Northern 
+                    Luzon's western coast. Bantay Municipality, Santa Municipality, 
+                    Caoayan Municipality, and Sta Municipality form its northern, eastern, 
+                    southern, and western borders, respectively. Lastly, on the southwest 
+                    coast along the China Sea, and Catalina. It is 80 miles (408 km) from 
+                    Manila. 139 kilometers away from Laoag City. from La Union's San Fernando.
+                    <br><br>
+                    The center of Vigan is roughly situated between the meridian 120 23'15" 
+                    east longitude and the parallel 17 34'30" north latitude. Its total land 
+                    area is 2,886.085 hectares, or 28.86085 sq km.
+                    <br><br>
+                    The provincial capital of Ilocos Sur, City of Vigan, is located on Northern 
+                    Luzon's western coast. Its borders are the Municipality of Santa on the east, 
+                    the Municipality of Bantay on the north, the Municipality of Caoayan on the 
+                    south, and the Municipality of Sta on the west. Catalina and the China Sea in 
+                    the southwest. Manila is 408 kilometers away, Laoag City is 80 kilometers away, 
+                    and San Fernando, La Union is 139 kilometers away.
+                    <br> <br>
+                    There are 39 barangays in Vigan; the poblacion barangays are made up of nine 
+                    barangays and have a combined land area of 192.45 hectares; the adjacent 30 
+                    barangays have a total land area of 2,693.635 hectares. The center of Vigan 
+                    is roughly between the parallel 17 34' 30" north latitude and the meridian 
+                    120 23' 15" east longitude.
+                    <br> <br>
+                    There are 39 barangays in Vigan; the poblacion barangays are made up of nine 
+                    barangays and have a combined land area of 192.45 hectares; the adjacent 30 
+                    barangays have a total land area of 2,693.635 hectares.
+                    <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="bgpic2new">
+            <h1>Vigan's Topography</h1>
+            <p>
+                The majority of Vigan's land area is flat, but Brgy. V, Tamag, and Paoa do 
+                have 20-degree slopes. 36.60% of the 2,886 hectares of land are used for residential 
+                purposes, while 45.18% are used for agriculture.
+                <br><br>
+                Deeply cut valleys make up the drainage network along the eastern edge 
+                of the Vigan-Bantay plain. These valleys' patterns are highly influenced 
+                by major faulting trends, especially those that run north and east. On the north and south, 
+                the Mestizo River, whose water release originates from Bantaoay head water, and the 
+                Vigan River, respectively, drain Vigan.
+                <br><br>
+                The slope of the Vigan-Bantay plain ranges from 0% to 8%, and the relief is actively level to 
+                undulating. Particularly Vigan is largely level with a few hills in the Brgy. The elevation of Tamag, 
+                Bulala, and Salindeg, which can occasionally exceed about 50 meters, is between 3% and 8%.
+                <br><br>
+                The eastern edge of the plain has a slope that ranges from high to very steep (40–60%), and the relief 
+                frequently rises to an elevation of more than 600 meters, notably in the northern and eastern parts.
+                <br><br>
+                The Vigan Gap Hill, where the continuously shifting Vigan River cuts its course, is the main 
+                topographic feature in the eastern part of the town. In the east of Vigan, around 10 kilometers, 
+                is where you'll find The Gap Hill.
+            </p>
+        </div>
+
+        <div class="drainage-climate">
+            <div class="drainage-part">
+                <h1>Surface Drainage <br><i>The Mestizo River</i></h1>
+                <img src="https://1.bp.blogspot.com/-bjCZs9PCAqk/VwkOUdLNbNI/AAAAAAAAC40/MMDh8GqGTfoTjncBJ9ahhd2-UrSlJ02tQ/s1600/P1010110.JPG">
+                <div class="drainage-content">
+                    <p>
+                        Vigan was once totally encircled by water that jutted out from the shore like a triangle island, 
+                        according to a chart from the sixteenth century. Geological observation supported this finding 
+                        because it could be determined that the water bodies in the vicinity of Vigan were the primary 
+                        channels that were then running in a westerly direction and branching as the river sliced the 
+                        Vigan ridge.
+                    </p>
+                </div>
+            </div>
+
+            <div class="climate-part">
+                <h1>The Climate <br>in Vigan City</i></h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Calle_Crisologo%2C_Vigan_after_rain.jpg/1280px-Calle_Crisologo%2C_Vigan_after_rain.jpg">
+                <div class="climate-content">
+                    <p>
+                        Vigan has a climate that is classified as having the first climate type in the Philippines, which 
+                        has two distinct seasons. The dry season often starts in November and lasts through April, peaking 
+                        in the hot months of April and May. June through October are the wettest months, with August being 
+                        the wettest month. The greatest recorded rainfall is 693.3 mm, and the average annual rainfall 
+                        is 190.683 mm.
+                        <br><br>
+                        26 °C is the average temperature. The average high and low temperatures are 30.9 °C and 21.1 °C, 
+                        respectively. Every year, 7–10 typhoons pass through Vigan. The relative humidity is 81% on average.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <section class= "footer">
+            <div class="footer-imgs">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Coat_of_arms_of_the_Philippines.svg/300px-Coat_of_arms_of_the_Philippines.svg.png" alt="Pilipinas">
+            <img src="https://archive.org/download/vigan/resources/viganSeal1.png" alt="Seven-Wonders">
+            <img src="https://archive.org/download/vigan/resources/viganSeal2.png" alt="World-Heritage">
+            </div>
+            <h1 class="vigan-footer">VIGAN<br>CITY</h1>
+            <div class="footer-text">
+                <div id="contact-info">
+                <p>City information: (077) 722-8771-75 local 206<br>
+                City Tourism: (077) 722-8771-75 local 104<br>
+                admin@vigancity.gov.ph</p>
+                </div>
+                <div id="copyright">
+                    <p>COPYRIGHT © 2023 | CITY GOVERNMENT OF VIGAN</p>
+                </div>
+            </div>
+        </section>
+            
+    </body>
+</html>

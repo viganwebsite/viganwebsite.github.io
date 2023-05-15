@@ -1,0 +1,127 @@
+/* font-family: 'Fjalla One', sans-serif;
+font-family: 'League Spartan', sans-serif; */
+
+/* CONTENT TITLE */
+.citizen-title{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.citizen-title h1{
+    font-family: 'Fjalla One', sans-serif;
+    color: black;
+    font-size: 50px;
+    padding: 60px 0 60px 0;
+}
+
+.citizen-content{
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://www.viganonline.com/ga/comelec_bldg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 70px 50px 70px 50px
+}
+
+.citizen-content-container{
+    background-color: orange;
+    padding: 40px;
+    margin: 0 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.citizen-content-container p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.download-button{
+    margin-top: 30px
+}
+
+.download-button a{
+    color: white;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 25px 0 0 0;
+    transition: all 0.3s ease;
+}
+
+.download-button button{
+    padding: 10px 15px;
+    background: #085589;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.download-button button:hover{
+    transform: scale(1.05) translateX(10px);
+    background: white;
+    color:black
+}
+
+.download-button a:hover{
+    color: black
+}
+
+.citizen-content img{
+    width:auto;
+    height: 45%;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 600px){
+    @viewport{
+        width: 600px;
+    }
+
+    /* CONTENT TITLE */
+
+    .citizen-title h1{
+        font-family: 'Fjalla One', sans-serif;
+        color: black;
+        font-size: 35px;
+        text-align: center;
+        padding: 50px 10px 50px 10px;
+    }
+
+    /* CONTENT */
+    .citizen-content{
+        background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://www.viganonline.com/ga/comelec_bldg.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 40px 40px 40px
+    }
+
+    .citizen-content img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    .citizen-content-container{
+        margin: 0
+    }
+}

@@ -1,0 +1,39 @@
+/* /* font-family: 'Fjalla One', sans-serif;
+font-family: 'League Spartan', sans-serif; */
+
+.hotline-texts{
+    padding: 40px 0 40px 0;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotline-texts h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
+    padding: 20px 0 20px 0
+}
+
+.hotline-texts p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
+.hotline-texts a{
+    text-decoration: none ;
+}
+
+@media (max-width:600px){
+    @viewport{
+        width: 600px;
+    }
+    .hotline-texts{
+    padding: 30px 30px 30px 30px
+    }
+
+    .hotline-texts h1{
+        text-align: center;
+        }
+}

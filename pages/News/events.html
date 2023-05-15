@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="events-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+
+    <head>
+        <title>Vigan City</title>
+    </head>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content 
+
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        */
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        
+
+    </script>
+    <body>
+        <header>
+            <div class="sidenavcont">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+                    
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+            
+    
+    
+            <div class="header">
+                <div class="header-logo">
+                    <a href="../../index.html"><img src="https://archive.org/download/vigan/resources/viganSeal.png" alt="viganSeal"></a>
+                    <h1 style="font-family: 'Barabara', sans-serif;">VIGAN CITY</h1>
+                </div>
+                
+                <nav>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        <!-- PAGE TITLE  -->
+        </header>
+        <div class="bgpic1">
+            <h1>Events Archive</h1>
+        </div>
+        
+        <!-- EVENTS -->
+
+        <!-- EVENT 1 -->
+
+        <div class="firstevent">
+            <div class="content1">
+                <h1>Artes Ita Paskua Admist COVID-19</h1>
+                <h3>This year’s Artes Ita Paskua is now celebrated physically which 
+                    started through the lighting of Christmas Tree in front of Vigan 
+                    City Hall
+                </h3>
+                
+                <p><b><i>November 22, 2021</b></i> | The annual Artes Ita Paskua of the City Government of Vigan got 
+                    underway last December 07 – 17 of 2020 with the new normal 
+                    set-up in which most of the events were done through online 
+                    and the others were with limited participants to comply into 
+                    the Minimum Health Standards set by the City Covid-19 Task Force. 
+                    Despite all the odds brought on by the pandemic, the Christmas 
+                    vibes in the Heritage City continued.
+                    <br><br>
+                    To prevent mass gathering while still enjoying the season, the 
+                    City Events, Promotions and Protocol Office steered barangay 
+                    and home based competitions such as the Inter-Barangay Christmas 
+                    Installation Contest which was held last December 7-8, 2020 
+                    wherein different barangays of the city putted up their Nativity 
+                    Scene, Christmas Trees and other colorful and bright Christmas 
+                    related decorations in their respective Barangay Halls and 
+                    covered courts made into recycled materials.
+                    <br><br>
+                    The judging of entries as well as the awarding of winners were done 
+                    by visiting them personally in their barangays, in the end the 
+                    following were conclude as winners to received cash prizes and 
+                    trophies through CEPPO Edred Piamonte, City Treasurer Milagros 
+                    Contreras and City Assistant Treasurer Edwin Remigios.
+                </p>
+            </div>
+
+            <img src="http://vigancity.gov.ph/wp-content/uploads/2021/02/DSC7930-1024x683.jpg" alt="Artes Ita Paskua"> 
+        </div>
+
+        <!-- EVENT 2 -->
+
+        <div class="secondevent">
+            <img src="http://vigancity.gov.ph/wp-content/uploads/2022/02/VZ6A3748-copy-1024x683.jpg" alt="Solidarity Week"> 
+
+            <div class="content2">
+                <h1>Heritage City Vigan Observes New Normal Solidarity Week</h1>
+                <h3>The heritage city of Vigan celebrated its second year of new 
+                    normal solidarity week where most of the activities are held 
+                    virtually
+                </h3>
+                
+                <p><b><i>September 8, 2021</b></i> | The City Government of Vigan, 
+                    under the direction of Mayor Juan Carlo Medina, organized a 
+                    number of events last September 6–16, 2021, as the Heritage City 
+                    of Vigan celebrated its second New Normal Solidarity Week. The 
+                    celebration was formally kicked off by the annual On-the-Spot 
+                    Painting and Letras Y Figuras competition at Fil-Spanish Friendship 
+                    Park, Mira Hills, Vigan City.
+                    <br><br>
+                    Due to the COVID-19 danger, the majority of the events were 
+                    conducted remotely, with entrants sending their entries via 
+                    recorded files. Mayor Medina stated that the celebration's main goal is to preserve 
+                    Biguenos culture and heritage in the face of today's difficult and 
+                    dynamic environment. He continued, "May our dedication to heritage 
+                    conservation continue for the continued prosperity of our beloved 
+                    heritage city for this is our distinct identity to the world."
+                </p>
+            </div>
+        </div>
+
+        <!-- EVENT 3 -->
+
+        <div class="thirdevent">
+            <div class="content3">
+                <h1>Pride Virtual Grand Fiesta in Vigan City</h1>
+                <h3>The heritage city of Vigan celebrated its second year of new 
+                    normal solidarity week where most of the activities are held 
+                    virtually
+                </h3>
+                
+                <p><b><i>June 14, 2021</b></i> | The City Government of Vigan, 
+                    in collaboration with Maris Ti Ayat Inc., held the first-ever 
+                    Pride Virtual Grand Fiesta last June 14–30, 2021, in spite of 
+                    the challenges brought on by the pandemic. The event featured a 
+                    variety of activities to mark the city's Pride month and to 
+                    further the support provided to the aforementioned community.
+                    <br><br>
+                    The month-long celebration got underway on June 14 when Maris 
+                    Ti Ayat Inc. officers and members under the direction of acting 
+                    president Jay Leonard Roldan gave out Abel facemasks and Pride 
+                    pins to city employees.
+                    <br><br>
+                    This is being done, according to Maris Ti Ayat Inc., 
+                    "to encourage the observance of health protocols while 
+                    simultaneously promoting our own Abel products and the tourism 
+                    industry of the city as a whole because they are one of the most 
+                    affected industries in this trying time." said Roldan.
+                </p>
+            </div>       
+            
+            <img src="http://vigancity.gov.ph/wp-content/uploads/2021/10/Brgy-II-1024x683.jpg" alt="Fiesta"> 
+        </div>
+
+        <section class= "footer">
+            <div class="footer-imgs">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Coat_of_arms_of_the_Philippines.svg/300px-Coat_of_arms_of_the_Philippines.svg.png"  alt="Pilipinas">
+            <img src="https://archive.org/download/vigan/resources/viganSeal1.png" alt="Seven-Wonders">
+            <img src="https://archive.org/download/vigan/resources/viganSeal2.png"  alt="World-Heritage">
+            </div>
+            <h1 class="vigan-footer">VIGAN<br>CITY</h1>
+            <div class="footer-text">
+                <div id="contact-info">
+                <p>City information: (077) 722-8771-75 local 206<br>
+                City Tourism: (077) 722-8771-75 local 104<br>
+                admin@vigancity.gov.ph</p>
+                </div>
+                <div id="copyright">
+                    <p>COPYRIGHT © 2023 | CITY GOVERNMENT OF VIGAN</p>
+                </div>
+            </div>
+        </section>
+            
+    </body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+
+    <head>
+        <title>Vigan City</title>
+    </head>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content 
+
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        */
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+    </script>
+    <style>
+        
+        .ind-container{
+            overflow: hidden;
+            background-color: orange;
+            display: flex;
+            min-height: 600px;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+            text-align-last: left;
+            font-family: 'Fjalla One', sans-serif;
+            padding: 100px;
+        }
+        .ind-container h1{
+            margin: 0 10% 0 10%;
+            font-size: 70px;
+        }
+        .ind-content p{
+            font-family: 'League Spartan', sans-serif;
+            font-size: 20px;
+            color:black;
+            padding: 30px;
+            background-color: white;
+        }
+        .ind-content h1{
+            font-family: 'League Spartan';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px 0 20px 0;
+            border-radius: 25px 25px 0 0;
+            background-color: #085589;
+            text-align-last:center;
+            color: white;
+        }
+        .ind-container .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            width: 500px;
+            border-radius: 35px;
+            transition: 0.3s all ease-out;
+        }
+        .img:hover{
+            transform: scale(1.1);
+        }
+        .ind-container .img h1{
+            
+            justify-content: center;
+            padding: 20px;
+            margin: 0 10% 0 10%;
+            width: 600px;
+        }
+        @media screen and (max-width: 600px) {
+            @viewport{
+                width: 600px;
+            }
+            .ind-container{
+                overflow: hidden;
+                background-color: orange;
+                flex-direction: column;
+                display: flex;
+                min-height: 600px;
+                align-items: center;
+                justify-content: space-around;
+                text-align: justify;
+                text-align-last: left;
+                font-family: 'Fjalla One', sans-serif;
+                padding: 30px;
+            }
+            .ind-container h1{
+                margin: 0 20px 0 20px;
+                font-size: 30px;
+            }
+            .ind-container .img{
+                order: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+                width: 300px;
+                object-fit: cover;
+                border-radius: 20px;
+                transition: 0.3s all ease-out;
+                margin: 10px;
+                background-size: cover;
+            }
+            .ind-container .img h1{
+                
+                justify-content: center;
+                padding: 20px;
+                margin: 0 10% 0 10%;
+            }
+            .ind-content{
+                order: 2;
+            }
+            .ind-content p{
+                font-family: 'League Spartan', sans-serif;
+                font-size: 20px;
+                color:black;
+                padding: 30px;
+                background-color: white;
+            }
+            .ind-content h1{
+                font-family: 'League Spartan';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 20px 0 20px 0;
+                border-radius: 25px 25px 0 0;
+                background-color: #085589;
+                text-align-last:center;
+                color: white;
+            }
+            .img:hover{
+                transform: scale(1.1);
+            }
+        }
+    </style>
+    <body>
+        <header>
+            <div class="sidenavcont">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+                    
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+            
+    
+    
+            <div class="header">
+                <div class="header-logo">
+                    <a href="../../index.html"><img src="https://archive.org/download/vigan/resources/viganSeal.png" alt="viganSeal"></a>
+                    <h1 style="font-family: 'Barabara', sans-serif;">VIGAN CITY</h1>
+                </div>
+                
+                <nav>
+                    <div class="dropdown" style="border-radius: 10px;">
+                        <button class="dropbtn" onclick="myFunction()">The City
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../TheCity/history.html">History</a>
+                            <a href="../TheCity/geography.html">Geography</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Governance
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Governance/cityofficials.html">City Officials</a>
+                            <a href="../Governance/citizen.html">Citizen's Charter</a>
+                            <a href="../Governance/vmc.html">Vision, Mission, and Core Values</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">Tourism
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Tourism/attraction.html">Attractions</a>
+                            <a href="../Tourism/industries.html">Industries</a>
+                            <a href="../Tourism/localeats.html">Local Eats</a>
+                            <a href="../Tourism/business.html">Business Application</a>
+                            <a href="../Tourism/touristmap.html">Tourist Map</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px">
+                        <button class="dropbtn" onclick="myFunction()">News
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../News/localnews.html">Local News</a>
+                            <a href="../News/events.html">Events</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown" style="border-radius: 10px" >
+                        <button class="dropbtn" onclick="myFunction()">Contacts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../Contacts/hotlines.html">Hotlines</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="bgpic1" style="background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://archive.org/30/items/vigan/ilocosbg.jpg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <h1>Industries</h1>
+        </div>
+        <div class="ind-container">
+            <div class="img" style="background-image: url(https://archive.org/30/items/vigan/burnay500px.jpg)"><h1></h1></div>
+            
+            <div class="ind-content" >
+                <h1>Burnay</h1>
+                <p>
+                    One of the two ceramic styles used in the Ilocos region—Burnay—is made there, particularly in the City of Vigan, where Chinese immigrants brought the technique sometime in the late 18th or early 19th century.
+                </p>
+            </div>
+        </div>
+        <div class="ind-container" style="background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://archive.org/30/items/vigan/ilocosbg.jpg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <div class="ind-content">
+                <h1 style="background-color: orange;">Damili</h1>
+                <p>
+                    The molding-related llocano word. One of Vigan's traditional industries is the production of terracotta or red clay. It has been practiced since the 19th century and is currently carried out in some Vigan barangay homes. Visitors from both domestic and foreign countries can stop by the barangays of Ayusan Sur, Barraca, Bulala, and Salindeg, Paratong, Paoa, and Pong-ol. within these barangays. Bulala is most known for producing damili, therefore most frequented.
+
+                </p>
+            </div>
+            <div class="img" style="background-image: url(https://archive.org/30/items/vigan/damili500px.jpg)"><h1></h1></div>
+        </div>
+    
+
+        <div class="ind-container">
+            <div class="img" style="background-image: url(https://archive.org/30/items/vigan/abel500px.jpg)"><h1></h1></div>
+            
+            <div class="ind-content">
+                <h1>Abel Loom Weaving</h1>
+                <p>
+                    The abel is a traditional Vigan and Ilocos-area woven product. The abel fabric is known for being areas of strength for a, material. The texture is areas of strength for so lovely that a few families have them as treasures that keep going as long as their classical decorations.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="ind-container" style="background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://archive.org/30/items/vigan/ilocosbg.jpg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <div class="ind-content">
+                <h1 style="background-color: orange;">Vigan empanada</h1>
+                <p>
+                    The name "Empanada" comes from a Spanish word that means "to wrap in bread." It is the most common street food in Vigan Ilocos Norte and one of the best meriendas there.
+
+                </p>
+            </div>
+            <div class="img" style="background-image: url(https://archive.org/30/items/vigan/empanada500px.jpg)"><h1></h1></div>
+        </div>
+            
+        </div>
+        </div>
+        <section class= "footer">
+            <div class="footer-imgs">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Coat_of_arms_of_the_Philippines.svg/300px-Coat_of_arms_of_the_Philippines.svg.png"  alt="Pilipinas">
+            <img src="https://archive.org/download/vigan/resources/viganSeal1.png" alt="Seven-Wonders">
+            <img src="https://archive.org/download/vigan/resources/viganSeal2.png"  alt="World-Heritage">
+            </div>
+            <h1 class="vigan-footer">VIGAN<br>CITY</h1>
+            <div class="footer-text">
+                <div id="contact-info">
+                <p>City information: (077) 722-8771-75 local 206<br>
+                City Tourism: (077) 722-8771-75 local 104<br>
+                admin@vigancity.gov.ph</p>
+                </div>
+                <div id="copyright">
+                    <p>COPYRIGHT © 2023 | CITY GOVERNMENT OF VIGAN</p>
+                </div>
+            </div>
+        </section>
+            
+    </body>
+</html>

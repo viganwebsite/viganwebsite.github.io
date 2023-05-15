@@ -1,0 +1,122 @@
+/* HISTORY OF VIGAN CITY */
+
+.history-content{
+    /* background: linear-gradient(#da6d42, #085589); */
+    background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0, 0, 0, 0.60)),url(https://archive.org/30/items/vigan/Vigan_History.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    text-align: justify;
+    align-items: center;
+    padding: 40px
+    
+}
+.history-content p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    color:white;
+    
+}
+.history-content img{
+    width: 35%;
+    height: auto;
+    margin-left: 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out
+}
+.history-content img:hover{
+    transform: scale(1.05);
+    z-index:2
+}
+
+/* HISTORICAL TIMELINE */
+
+.t-container{
+    padding:30px 0 30px 0;
+    background-color: antiquewhite;
+}
+.t-container h1, h2{
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+#t-title{
+    padding:30px;
+    font-size: 40px;
+}
+.t-container p{
+    font-family: 'League Spartan', sans-serif;
+}
+.timeline-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px;
+}
+.tbox{
+    width:150px;
+    height:230px;
+    margin: 0 25px 0 25px;
+    padding: 10px;
+    background-color: orange;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    transition:0.3s
+}
+
+.tbox:hover{
+    transform: scale(1.1);
+    background: white;
+    color: orange;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width:600px){
+    @viewport{
+        width: 600px;
+    }
+    .history-content{
+        display:block;
+    }
+
+    .history-content img{
+        width: 450px;
+        height: auto;
+        margin: 7% 7% 7% 7%
+    }
+    .timeline-box{
+        display: grid;
+    }
+    .tbox{
+        width:150px;
+        height:250px;
+        margin: 10px 25px 10px 15px;
+        padding: 10px;
+        background-color: orange;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        transition:0.3s
+    }
+}
+
+@media (max-width:412px){
+    .history-content{
+        display:block;
+    }
+
+    .history-content img{
+        width: 300px;
+        height: auto;
+        margin: 7% 7% 7% 7%
+    }
+    .timeline-box{
+        display: grid;
+    }
+}

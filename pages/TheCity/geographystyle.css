@@ -1,0 +1,223 @@
+.bgpic1 h1{
+    padding: 20px;
+}
+.bgpic1{
+    height: 350px;
+}
+
+/* GEOGRAPHIC LOCATION AND AREA */
+
+.geo-container{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: justify;
+    font-family: 'Fjalla One', sans-serif;;
+    padding: 30px 30px 30px 30px
+}
+.geo-container h1{
+    margin: 0 10% 0 10%;
+    font-size: 70px;
+}
+.geo-content p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    color:black;
+    margin: 5% 5% 5% 0;
+}
+
+/* VIGAN'S TOPOGRAPHY */
+
+.bgpic2new{
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url(https://pornvnguide.com/981cf089/https/63f62d/blog-assets.thedyrt.com/uploads/2019/06/shutterstock_75803032-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: left;
+    text-align: justify;
+    font-family: 'Fjalla One', sans-serif;;
+    padding: 30px 30px 30px 30px
+}
+.bgpic2new h1{
+    color: white;
+    margin: 0 10% 0 10%;
+    font-size: 70px;
+}
+
+.bgpic2new p{
+    color:white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    margin: 5% 5% 5% 0;
+}
+
+/* SURFACE DRAINAGE */
+
+.drainage-climate{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: justify;
+    text-align-last: left;
+    font-family: 'Fjalla One', sans-serif;;
+}
+.drainage-part{
+    width: 50%;
+    background-color:orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.drainage-part h1{
+    font-size: 70px;
+    padding: 50px
+}
+.drainage-part img{
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    transition: .50s ease
+}
+.drainage-part img:hover{
+    transform: translateY(-15px)
+}
+.drainage h1{
+    margin: 0 10% 0 10%;
+    font-size: 70px;
+}
+.drainage-content p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    color:black;
+    padding: 50px
+}
+
+/* CLIMATE */
+
+.climate-part{
+    width: 50%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.climate-part h1{
+    font-size: 70px;
+    padding: 50px
+}
+.climate-part img{
+    display: flex;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    transition: .50s ease
+}
+.climate-part img:hover{
+    transform: translateY(-15px)
+}
+.climate h1{
+    margin: 0 10% 0 10%;
+    font-size: 70px;
+}
+.climate-content p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    color:black;
+    padding: 50px
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width:600px){
+    @viewport{
+        width: 600px;
+    }
+    
+    /* GEOGRAPHIC LCOATION AND AREA */
+    .geo-container{
+        display: block;
+    }
+    .geo-container h1{
+        text-align: center;
+        font-size: 50px;
+        padding: 15px
+    }
+    .geo-content p{
+        font-family: 'League Spartan', sans-serif;
+        font-size: 20px;
+        color:black;
+        padding: 10px;
+        margin: 0
+    }
+
+    /* VIGAN'S TOPOGRAPHY */
+
+    .bgpic2new{
+        display: block;
+        background-attachment: fixed;
+        padding: 30px 30px 30px 30px
+    }
+    .bgpic2new h1{
+        color: white;
+        text-align: center;
+        margin: 0 10% 0 10%;
+        font-size: 50px;
+        padding: 15px
+    }
+    
+    .bgpic2new p{
+        color:white;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        margin: 0
+    }
+
+    /* SURFACE DRAINAGE */
+    
+    .drainage-climate{
+        display: block;
+    }
+
+    .drainage-part{
+        width: 100%;
+    }
+
+    .drainage-part h1{
+        font-size: 50px;
+    }
+
+    .drainage-part p{
+        padding: 40px
+    }
+
+    .drainage-part img{
+        width: 70%;
+        height: auto
+    }
+
+    /* THE CLIMATE */
+
+    .climate-part{
+        width: 100%
+    }
+
+    .climate-part h1{
+        font-size: 50px;
+    }
+
+    .climate-part img{
+        width: 70%;
+        height: auto
+    }
+
+    .climate-part p{
+        padding: 40px
+    }
+}
