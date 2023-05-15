@@ -587,13 +587,17 @@ iframe {
         justify-content: center;
         align-items: center;
     }
+    iframe {
+        margin: 0;
+        padding: 0;
+    }
 
     .embed-vid iframe{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 460px;
-        height: 258.75px;
+        width: auto;
+        height: auto;
     }
 
     /* bg pics */
