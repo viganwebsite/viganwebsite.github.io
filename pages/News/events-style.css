@@ -151,8 +151,6 @@ font-family: 'League Spartan', sans-serif; */
     /* EVENT 1 */
     
     .firstevent{
-        text-align: justify;
-        text-align-last: left ;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -170,6 +168,10 @@ font-family: 'League Spartan', sans-serif; */
 
     .firstevent h3{
         font-size: 25px;
+    }
+    .content1 p{
+        text-align: justify;
+        text-align-last: left ;
     }
 
     /* EVENT 2 */
@@ -198,6 +200,10 @@ font-family: 'League Spartan', sans-serif; */
     .content2{
         padding: 20px
     }
+    .content2 p{
+        text-align: justify;
+        text-align-last: left ;
+    }
 
     /* EVENT 3 */
     .thirdevent{
@@ -211,6 +217,10 @@ font-family: 'League Spartan', sans-serif; */
 
     .content3{
         padding: 20px
+    }
+    .content3 p{
+        text-align: justify;
+        text-align-last: left ;
     }
 
     .thirdevent img{
