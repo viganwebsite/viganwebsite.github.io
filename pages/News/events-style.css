@@ -176,8 +176,6 @@ font-family: 'League Spartan', sans-serif; */
 
     /* EVENT 2 */
     .secondevent{
-        text-align: justify;
-        text-align-last: left ;
         display: flex;
         flex-direction: column;
         justify-content: center;
